@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Reference Sheet</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header><h1>Reference sheet HTML&CSS</h1></header>
+    
+    <h2>Semantic HTML</h2>
+    <table>
+        <thead>
+            <tr>
+                <td>Tag</td>
+                <td>Name</td>
+                <td>Description</td>
+                <td>Attributes</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="code">&lt;a&gt;</span></td>
+                <td>Anchor</td>
+                <td>Element to make link to external source, other/part of page (open/close)</td>
+                <td><span class="code">href=""</span> for source, <span class="code">target="_blank"</span> to open in new tab, 
+                    elements between open and closing tags will be clickable link, in &ltli&gt; the &lt;a&gt; must be inside the tags</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;img&gt;</span></td>
+                <td>Image</td>
+                <td>Element to insert a picture from files or external source (selfclose)</td>
+                <td><span class="code">src=""</span> for source,
+                    <span class="code">alt=""</span> for description of picture (mostly for search engine and screenreader)</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;audio&gt;</span></td>
+                <td>Audio</td>
+                <td>Element to insert an audio from files or external source (open/close)</td>
+                <td><span class="code">src=""</span> for source, <span class="code">controls</span> for play/pause/volume, 
+                    <span class="code">autoplay</span> to start audio on page load</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;video&gt;</span></td>
+                <td>Video</td>
+                <td>Element to insert a video from files or external source (open/close)</td>
+                <td><span class="code">src=""</span> for source, include "Video not supported" between open and closing tags in case video can't be loaded, 
+                    <span class="code">controls</span> for play/pause/volume, <span class="code">autoplay</span> to start video on page load</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;embed&gt;</span></td>
+                <td>Embed</td>
+                <td>Element to insert any type of media (photo, video, GIF etc.) (selfclose)</td>
+                <td class="underline">THIS TAG IS ADVISED NOT TO BE USED ANYMORE! Taught for legacy purpose only</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;figure&gt;</span></td>
+                <td>Figure</td>
+                <td>Element to enclose media (photo, video etc.) (open/close)</td>
+                <td><span class="code">&lt;figcaption&gt;</span>(open/close) to add caption/description to be grouped with the media </td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <h2>CSS Stuffies</h2>
+    <table>
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Description</td>
+                <td>Properties</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="code">overflow</span></td>
+                <td>Sets the desired behavior for when an element's content is too big to fit in its block formatting context </td>
+                <td>(default) <span class="code">visible</span> = content may be rendered outside the container, <span class="code">hidden</span> = content is cut off and hidden
+                    ,<span class="code">scroll</span> = scrollbar added to view all content</td>
+            </tr>
+            <tr>
+                <td><span class="code">visibility</span></td>
+                <td>Sets the visibility of an element without changing the layout of the page</td>
+                <td><span class="code">hidden</span> = hides the element but the space of the element will still be reserved on the page, <span class="code">visible</span> = displays the element
+                    ,<span class="code">collapse</span> = collapses the element (ea. in tables this "removes" the row as <span class="code">display: none</span>, on other elements it works as <span class="code">hidden</span>)</td>
+            </tr>
+            <tr>
+                <td><span class="code">box-sizing</span></td>
+                <td>Controls how an elements height and width are rendered (in/excluding padding & border) </td>
+                <td>(default) <span class="code">content-box</span> = content will be rendered the set height and width with the padding and border being added on top,
+                    <span class="code">border-box</span> = content will be rendered to a calculated height and width after padding and border are taken off the set height and width</td>
+            </tr>
+        </tbody>
+    </table>
+    
+   <footer>
+       <img id="footer-img" src="to-be-continued-meme.png" alt="To be continued">
+   </footer> 
+</body>
+
+</html>
