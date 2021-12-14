@@ -63,33 +63,71 @@
 
     </table>
 
-    <h2>CSS Stuffies</h2>
+    <h2>CSS Properties</h2>
     <table>
         <thead>
             <tr>
-                <td>Name</td>
+                <td>Property</td>
                 <td>Description</td>
-                <td>Properties</td>
+                <td>Value available for the property</td>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td><span class="code">overflow</span></td>
                 <td>Sets the desired behavior for when an element's content is too big to fit in its block formatting context </td>
-                <td>(default) <span class="code">visible</span> = content may be rendered outside the container, <span class="code">hidden</span> = content is cut off and hidden
-                    ,<span class="code">scroll</span> = scrollbar added to view all content</td>
+                <td>(default) <span class="code">visible</span> = content may be rendered outside the container,<br /> <span class="code">hidden</span> = content that overflows from the container is cut off and hidden
+                    , <br /><span class="code">scroll</span> = scrollbar will be added to the container to be able to view all content</td>
             </tr>
             <tr>
                 <td><span class="code">visibility</span></td>
                 <td>Sets the visibility of an element without changing the layout of the page</td>
-                <td><span class="code">hidden</span> = hides the element but the space of the element will still be reserved on the page, <span class="code">visible</span> = displays the element
-                    ,<span class="code">collapse</span> = collapses the element (ea. in tables this "removes" the row as <span class="code">display: none</span>, on other elements it works as <span class="code">hidden</span>)</td>
+                <td>(default) <span class="code">visible</span> = displays the element, <br /><span class="code">hidden</span> = hides the element but the space of the element will still be reserved on the page, 
+                    ,<br /><span class="code">collapse</span> = collapses the element (ea. in tables this "removes" the row as <span class="code">display: none</span>, on other elements it works as <span class="code">hidden</span>)</td>
             </tr>
             <tr>
                 <td><span class="code">box-sizing</span></td>
                 <td>Controls how an elements height and width are rendered (in/excluding padding & border) </td>
                 <td>(default) <span class="code">content-box</span> = content will be rendered the set height and width with the padding and border being added on top,
-                    <span class="code">border-box</span> = content will be rendered to a calculated height and width after padding and border are taken off the set height and width</td>
+                    <br /><span class="code">border-box</span> = content will be rendered to a calculated height and width after padding and border are taken off the set height and width</td>
+            </tr>
+            <tr>
+                <td><span class="code">position</span></td>
+                <td>Sets the position of an HTML element on the page </td>
+                <td>(default) <span class="code">static</span> = follows the order in which the elements are defined in the HTML file, 
+                    <br /><span class="code">relative</span> = position element relative to its default static position on the page (use top, bottom, left, right and a value to define position), 
+                    <br /><span class="code">absolute</span> = all other elements on the page will ignore the element and act like it is not present on the page. The element will be positioned relative to its closest positioned parent element, (use top, bottom, left, right and a value to define final position), 
+                    <br /><span class="code">fixed</span> = pinned to a specific spot on the page (think of always visible navbar even when you scroll the page), 
+                    <br /><span class="code">sticky</span> = keeps an element in the document flow as the user scrolls, but sticks to a specified position as the page is scrolled further</td>
+            </tr>
+            <tr>
+                <td><span class="code">z-index</span></td>
+                <td>Controls how far back or how far forward an element should appear on the web page when elements overlap </td>
+                <td>This property accepts integer values. Depending on their values, the integers instruct the browser on the order in which elements should be layered on the web page. 
+                    <br />If not specified the default integer will be 0 + the z-index property does not work on static elements</td>
+            </tr>
+            <tr>
+                <td><span class="code">display</span></td>
+                <td>Dictates if the element can share horizontal space with other elements </td>
+                <td><span class="code">inline</span> = elements have a box that wraps tightly around their content, only taking up the amount of space necessary to display their content (height/width can't be altered) and not requiring a new line after each element, 
+                    <br /><span class="code">block</span> =  elements fill the entire width of the page by default, but their width property can also be set. Unless otherwise specified, they are the height necessary to accommodate their content, 
+                    <br /><span class="code">inline-block</span> = combines features of both inline and block. Elements can appear next to each other and we can specify their dimensions using the width and height properties</td>
+            </tr>
+            <tr>
+                <td><span class="code">float</span></td>
+                <td>Controls moving an element as far left or as far right as possible in the container </td>
+                <td>This works for static and relative positioned elements + Floated elements must have a width specified.<br />
+                    <span class="code">left</span> = moves, or floats, elements as far left as possible,
+                    <span class="code">right</span> = moves, or floats, elements as far right as possible</td>
+            </tr>
+            <tr>
+                <td><span class="code">clear</span></td>
+                <td>Controls how elements should behave when they bump into each other on the page </td>
+                <td>This is used for when multiple elements are floating at once.<br />
+                    <span class="code">left</span> = the left side of the element will not touch any other element within the same containing element,
+                    <br /><span class="code">right</span> = the right side of the element will not touch any other element within the same containing element,
+                    <br /><span class="code">both</span> = neither side of the element will touch any other element within the same containing element,
+                    <br /><span class="code">none</span> = the element can touch either side</td>
             </tr>
         </tbody>
     </table>

@@ -58,5 +58,7 @@ td {
 }
 
 #footer-img {
-    height: 100px;
+    width: 30%;
+    float: right;
+    margin: 20px;
 }
