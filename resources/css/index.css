@@ -1,0 +1,102 @@
+/* My fontfamilies : Mali (titles), Raleway (body), Nanum Gothic Coding (code snippets) */
+/* Color Theme Swatches in RGBA
+ PINK color: rgba(216, 143, 204, 1);
+ BLACK color: rgba(2, 12, 10, 1);
+ WHITE color: rgba(242, 231, 222, 1);
+ YELLOW color: rgba(247, 162, 113, 1);
+ ORANGE color: rgba(242, 117, 72, 1); */
+
+* {
+    font-family:'Raleway', Verdana, sans-serif;
+    line-height: 24px;
+    font-size: 18px;
+    color: rgba(2, 12, 10, 1);
+    background-color: rgba(242, 231, 222, 1);
+}
+
+h1, h2, h3 {
+    font-family: 'Mali', serif;
+    font-weight: 700;
+    letter-spacing: 3px;    
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+h1{
+    font-size: 42px;
+    padding: 25px 15px;
+    background-color: rgba(216, 143, 204, 1);
+    margin: 15px auto;
+}
+
+h2 {
+    font-size: 32px;
+    background-color: rgba(242, 117, 72, 1);
+    width: 30%;
+    margin: 50px auto 20px auto;
+}
+
+table {
+    border: 4px double rgba(2, 12, 10, 1);
+    border-radius: 3px;
+    background-color: rgba(216, 143, 204, 1);
+    margin: 20px auto;  
+    padding: 5px; 
+}
+
+thead td{
+    background-color: rgba(242, 117, 72, 1);
+    vertical-align: middle;
+    border: 3px solid rgba(2, 12, 10, 1);
+    letter-spacing: 2px;
+}
+
+td {
+   border: 1px solid rgba(2, 12, 10, 1);
+   background-color: rgba(247, 162, 113, 0.1);
+   padding: 3px 5px;
+}
+
+nav a {
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 3px 2px 3px rgb(0, 0, 0);
+    cursor: pointer;
+
+    font-family: 'Raleway', Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(247, 162, 113, 1);
+    color: rgba(2, 12, 10, 1);
+    border: 1px solid rgba(242, 117, 72, 1);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgba(242, 231, 222, 1);
+}
+
+nav a:active {
+    background-color: rgba(242, 117, 72, 1);
+    box-shadow: 0px 0px;
+}
+
+.underline {
+    text-decoration: underline;
+    color: red;
+}
+
+.code {
+    font-family: "Nanum Gothic Coding", monospace;
+    font-size: 16px;
+    background-color: rgba(247, 162, 113, 1);
+    border: 1px solid black;
+    padding: 2px 5px;
+}
+
+#footer-img {
+    width: 30%;
+    float: right;
+    margin: 20px;
+}

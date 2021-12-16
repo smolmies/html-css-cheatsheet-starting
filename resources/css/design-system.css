@@ -1,0 +1,89 @@
+/* My fontfamilies : Mali (titles), Raleway (body), Nanum Gothic Coding (code snippets) */
+/* Color Theme Swatches in RGBA
+ PINK color: rgba(216, 143, 204, 1);
+ BLACK color: rgba(2, 12, 10, 1);
+ WHITE color: rgba(242, 231, 222, 1);
+ YELLOW color: rgba(247, 162, 113, 1);
+ ORANGE color: rgba(242, 117, 72, 1); */
+
+h3 {
+    background-color: transparent;
+    font-size: 26px;
+    margin: 20px;
+}
+h4 {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.bold {
+    font-weight: 700;
+}
+.italic {
+    font-style: italic;
+}
+
+.color-container, .font-container, .text-style-container {
+    box-sizing: border-box;
+    width: 90%;
+    padding: 40px;
+    margin: 50px auto;
+    border: 5px double rgba(2, 12, 10, 1);
+    border-radius: 5px;
+}
+
+.color-container p {
+    font-weight: bold;
+    background-color: transparent;
+    text-align: center;
+}
+.color-theme {
+    display: inline-block;
+    height: 100px;
+    width: 25%;
+    padding: 10px;
+    margin: 20px 10px;
+    border: 1px solid rgba(2, 12, 10, 1);
+}
+.color-theme-one {
+    background-color: rgba(216, 143, 204, 1);
+}
+
+.color-theme-two {
+    background-color: rgba(2, 12, 10, 1);
+}
+.color-theme-two p {
+    color: rgba(242, 231, 222, 1); 
+}
+
+.color-theme-three {
+    background-color: rgba(242, 231, 222, 1);
+}
+
+.color-theme-four {
+    background-color: rgba(247, 162, 113, 1);
+}
+.color-theme-five {
+    background-color: rgba(242, 117, 72, 1);
+}
+
+.font-container div {
+    display: inline-block;
+    margin: 10px;
+}
+.font-one h4, .font-one p {
+    font-family: 'Mali', serif;
+}
+
+.font-three h4, .font-three p {
+    font-family: "Nanum Gothic Coding", monospace;
+}
+
+.text-container h1, .text-container h2, .text-container h3 {
+    text-align: left;
+    margin: 20px auto 10px 0;
+}
+
+.text-container li {
+    list-style-type:square;
+}
