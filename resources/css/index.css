@@ -43,6 +43,7 @@ table {
     background-color: rgba(216, 143, 204, 1);
     margin: 20px auto;  
     padding: 5px; 
+    width: 95%;
 }
 
 thead td{

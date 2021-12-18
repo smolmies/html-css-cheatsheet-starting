@@ -138,6 +138,69 @@
         </tbody>
     </table>
     
+    <h2>Responsive Design</h2>
+    <table>
+        <thead class="bold">
+            <tr>
+                <td>Property</td>
+                <td>Description</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="code">em</span></td>
+                <td>Sizes the font, margin etc.. relative to the font-size declared in the parent element of the child</td>
+            </tr>
+            <tr>
+                <td><span class="code">rem</span></td>
+                <td>Sizes the font, margin etc.. relative to the font-size declared in the root (html element)</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Media Queries</h2>
+    <table>
+        <thead class="bold">
+            <tr>
+                <td>Media features</td>
+                <td>Description</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">
+                    <span class="code bold">@media only screen and (...)</span> extend query by adding <span class="code">and ( ... )</span><span class="italic"> { both features must be met }</span> 
+                    or<span class="code"> , ( ... ) </span><span class="italic"> { just one feature must be met }</span></span> </td>
+            </tr>
+            <tr>
+                <td class="code">(min-width: ...px)</td>
+                <td>Set a minimum width of the screen or the view of the browser window</td>
+            </tr>
+            <tr>
+                <td class="code">(max-width: ...px)</td>
+                <td>Set a maximum width of the screen or the view of the browser window</td>
+            </tr>
+            <tr>
+                <td class="code">(min-resolution: ...dpi/dpc)</td>
+                <td>Set a minimum resolution (dots per inch/cm) of the screen or the view of the browser window</td>
+            </tr>
+            <tr>
+                <td class="code">(max-resolution: ...dpi/dpc)</td>
+                <td>Set a maximum resolution (dots per inch/cm) of the screen or the view of the browser window</td>
+            </tr>
+            <tr>
+                <td class="code">(orientation: landscape)</td>
+                <td>Detects if the page has more width than height. If a page is wider, it’s considered landscape</td>
+            </tr>
+            <tr>
+                <td class="code">(orientation: portrait)</td>
+                <td>Detects if the page has more height than width. If a page is taller, it’s considered portrait</td>
+            </tr>
+            <tr>
+                <td colspan="2">Click <a href="https://content.codecademy.com/courses/freelance-1/unit-5/screen-sizes.png">HERE</a> for a list of the most common "breakpoints" used for responsive webdesign</td>
+            </tr>
+        </tbody>
+    </table>
    <footer>
     <img id="footer-img" src="./resources/images/to-be-continued-meme.png" alt="To be continued">   </footer> 
 </body>
