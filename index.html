@@ -5,7 +5,7 @@
     <title>Personal Reference Sheet</title>
     <link href="./resources/css/index.css" rel="stylesheet">
     <link href="./resources/css/design-system.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&family=Nanum+Gothic+Coding&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&family=Nanum+Gothic+Coding&family=Raleway:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet"></head>
 <body>
     <header>    
         <h1>Reference sheet HTML&CSS</h1>
@@ -113,13 +113,6 @@
                     <br />If not specified the default integer will be 0 + the z-index property does not work on static elements</td>
             </tr>
             <tr>
-                <td><span class="code">display</span></td>
-                <td>Dictates if the element can share horizontal space with other elements </td>
-                <td><span class="code">inline</span> = elements have a box that wraps tightly around their content, only taking up the amount of space necessary to display their content (height/width can't be altered) and not requiring a new line after each element, 
-                    <br /><span class="code">block</span> =  elements fill the entire width of the page by default, but their width property can also be set. Unless otherwise specified, they are the height necessary to accommodate their content, 
-                    <br /><span class="code">inline-block</span> = combines features of both inline and block. Elements can appear next to each other and we can specify their dimensions using the width and height properties</td>
-            </tr>
-            <tr>
                 <td><span class="code">float</span></td>
                 <td>Controls moving an element as far left or as far right as possible in the container </td>
                 <td>This works for static and relative positioned elements + Floated elements must have a width specified.<br />
@@ -135,10 +128,17 @@
                     <br /><span class="code">both</span> = neither side of the element will touch any other element within the same containing element,
                     <br /><span class="code">none</span> = the element can touch either side</td>
             </tr>
+            <tr>
+                <td><span class="code">display</span></td>
+                <td>Dictates if the element can share horizontal space with other elements </td>
+                <td><span class="code">inline</span> = elements have a box that wraps tightly around their content, only taking up the amount of space necessary to display their content (height/width can't be altered) and not requiring a new line after each element, 
+                    <br /><span class="code">block</span> =  elements fill the entire width of the page by default, but their width property can also be set. Unless otherwise specified, they are the height necessary to accommodate their content, 
+                    <br /><span class="code">inline-block</span> = combines features of both inline and block. Elements can appear next to each other and we can specify their dimensions using the width and height properties</td>
+            </tr>
         </tbody>
     </table>
     
-    <h2>Responsive Design</h2>
+    <h2>Flexbox</h2>
     <table>
         <thead class="bold">
             <tr>
@@ -148,12 +148,67 @@
         </thead>
         <tbody>
             <tr>
-                <td><span class="code">em</span></td>
-                <td>Sizes the font, margin etc.. relative to the font-size declared in the parent element of the child</td>
+                <td><span class="code">display: flex</span></td>
+                <td>Element that gets the flex value will become a flex container and will remain block level - no other elements will appear on the same line. 
+                    However, it will change the behavior of its child elements, these will become inline.</td>
             </tr>
             <tr>
-                <td><span class="code">rem</span></td>
-                <td>Sizes the font, margin etc.. relative to the font-size declared in the root (html element)</td>
+                <td><span class="code">display: inline-flex</span></td>
+                <td>Element that gets the inline-flex value will become a flex container and will become inline level - other elements are allowed to appear on the same line. 
+                    It will change the behavior of its child elements, these will become inline too.</td>
+            </tr>
+            <tr>
+                <td colspan="2">Most common values for the following properties are: <span class="code">flex-start</span>, 
+                    <span class="code">flex-end</span>, <span class="code">center</span>, <span class="code">space-around</span> 
+                    and <span class="code">space-between</span>. Or <span class="code">baseline</span> and <span class="code">stretch</span>.</td>
+            </tr>
+            <tr>
+                <td><span class="code">justify-content</span></td>
+                <td>This will cause all of the flex items to shift to the defined value within the flex container <span class="bold">(ON THE X-AXIS)</span>. 
+                    <span class="italic">(flex-start would be left, flex-end is right, center is in the middle, space-around calculates the same space around every item 
+                    and space-between has no space at the start or the end but puts all the space between the items)</span> </td>
+            </tr>
+            <tr>
+                <td><span class="code">align-items</span></td>
+                <td>This will cause all of the flex items to shift to the defined value within the flex container <span class="bold">(ON THE Y-AXIS)</span>
+                    <span class="italic">(flex-start would be to the top, flex-end is bottom, center is in the middle, baseline aligns the bottoms of all items with eachother 
+                        and stretch will stretch items from top to bottom of the container if they have no or a min. specified height, elements with a height specified will not stretch)</span>
+                </td>
+            </tr>
+            <tr>
+                <td><span class="code">flex-grow</span></td>
+                <td>This allows us to specify if items should grow to fill a container and also which items should grow proportionally more or less than others. 
+                    <span class="italic">(Value is an integer ea. if #div-1 has flex-grow: 1 and #div-2 has flex-grow: 2 then div-2 will grow twice as much in the new space available)</span></td>
+            </tr>
+            <tr>
+                <td><span class="code">flex-shrink</span></td>
+                <td> This allows us to specify which elements will shrink proportionally more or less than others. Default value is 1, if you do not want this item to shrink you have to set it to 0. </td>
+            </tr>
+            <tr>
+                <td><span class="code">flex-basis</span></td>
+                <td>This allows us to specify the width of an item before it stretches or shrinks. Can be used instead of setting width in CSS.</td>
+            </tr>
+            <tr>
+                <td><span class="code">flex</span></td>
+                <td>This provides a convenient way for specifying how elements stretch and shrink, while simplifying the CSS required. The flex property allows you to declare <span class="bold">flex-grow, flex-shrink, and flex-basis all in one line.</span>
+                (ea. <span class="code">#big{ flex: 2 1 150px;} #normal{ flex: 1 1 150px;}</span> Here the #big item will grow twice as much in the new space available)</td>
+            </tr>
+            <tr>
+                <td><span class="code">flex-wrap</span></td>
+                <td>This allows us to specify if and how we want flex-items to move to the next line when necessary. <span class="italic">(Default is nowrap which prevents items from wrapping, 
+                    wrap will make the item that doesn't fit into a row move DOWN to the next line, wrap-reverse will make the item that doesn't fit into a row move UP to the next line)</span></td>
+            </tr>
+            <tr>
+                <td><span class="code">align-content</span></td>
+                <td> ... </td>
+            </tr>
+            <tr>
+                <td><span class="code">flex-direction</span></td>
+                <td> ... </td>
+            </tr>
+            <tr>
+                <td><span class="code">flex-flow</span></td>
+                <td> ... </td>
             </tr>
         </tbody>
     </table>
@@ -202,7 +257,8 @@
         </tbody>
     </table>
    <footer>
-    <img id="footer-img" src="./resources/images/to-be-continued-meme.png" alt="To be continued">   </footer> 
+    <img id="footer-img" src="./resources/images/to-be-continued-meme.png" alt="To be continued">   
+    </footer> 
 </body>
 
 </html>

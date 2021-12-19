@@ -32,8 +32,10 @@ h1{
 
 h2 {
     font-size: 32px;
-    background-color: rgba(242, 117, 72, 1);
+    background-color: rgba(2, 12, 10, 1);
+    color: rgba(247, 162, 113, 1);
     width: 30%;
+    border: 2px solid rgba(247, 162, 113, 1);
     margin: 50px auto 20px auto;
 }
 
@@ -48,14 +50,16 @@ table {
 
 thead td{
     background-color: rgba(242, 117, 72, 1);
+    color: rgba(242, 231, 222, 1);
     vertical-align: middle;
     border: 3px solid rgba(2, 12, 10, 1);
     letter-spacing: 2px;
 }
 
 td {
+   font-weight: 500;
    border: 1px solid rgba(2, 12, 10, 1);
-   background-color: rgba(247, 162, 113, 0.1);
+   background-color: rgba(242, 231, 222, 1);
    padding: 3px 5px;
 }
 
