@@ -165,20 +165,21 @@
             <tr>
                 <td><span class="code">justify-content</span></td>
                 <td>This will cause all of the flex items to shift to the defined value within the flex container <span class="bold">(ON THE X-AXIS)</span>. 
-                    <span class="italic">(flex-start would be left, flex-end is right, center is in the middle, space-around calculates the same space around every item 
-                    and space-between has no space at the start or the end but puts all the space between the items)</span> </td>
+                    <span class="code">flex-start</span> would be left, <span class="code">flex-end</span> is right, <span class="code">center</span> is in the middle, <span class="code">space-around</span> calculates the same space around every item 
+                    and <span class="code">space-between</span> has no space at the start or the end but puts all the space between the items </td>
             </tr>
             <tr>
                 <td><span class="code">align-items</span></td>
                 <td>This will cause all of the flex items to shift to the defined value within the flex container <span class="bold">(ON THE Y-AXIS)</span>
-                    <span class="italic">(flex-start would be to the top, flex-end is bottom, center is in the middle, baseline aligns the bottoms of all items with eachother 
-                        and stretch will stretch items from top to bottom of the container if they have no or a min. specified height, elements with a height specified will not stretch)</span>
+                    <span class="code">flex-start</span> would be to the top, <span class="code">flex-end</span> is bottom, <span class="code">center</span> is in the middle, <span class="code">baseline</span> aligns the bottoms of all items with eachother 
+                    and <span class="code">stretch</span> will stretch items from top to bottom of the container if they have no or a min. specified height, elements with a height specified will not stretch
                 </td>
             </tr>
             <tr>
                 <td><span class="code">flex-grow</span></td>
                 <td>This allows us to specify if items should grow to fill a container and also which items should grow proportionally more or less than others. 
-                    <span class="italic">(Value is an integer ea. if #div-1 has flex-grow: 1 and #div-2 has flex-grow: 2 then div-2 will grow twice as much in the new space available)</span></td>
+                    Default value is 0 and they will not grow, if you want this item to grow you have to set value to at least 1.
+                    </td>
             </tr>
             <tr>
                 <td><span class="code">flex-shrink</span></td>
@@ -190,25 +191,35 @@
             </tr>
             <tr>
                 <td><span class="code">flex</span></td>
-                <td>This provides a convenient way for specifying how elements stretch and shrink, while simplifying the CSS required. The flex property allows you to declare <span class="bold">flex-grow, flex-shrink, and flex-basis all in one line.</span>
-                (ea. <span class="code">#big{ flex: 2 1 150px;} #normal{ flex: 1 1 150px;}</span> Here the #big item will grow twice as much in the new space available)</td>
-            </tr>
-            <tr>
-                <td><span class="code">flex-wrap</span></td>
-                <td>This allows us to specify if and how we want flex-items to move to the next line when necessary. <span class="italic">(Default is nowrap which prevents items from wrapping, 
-                    wrap will make the item that doesn't fit into a row move DOWN to the next line, wrap-reverse will make the item that doesn't fit into a row move UP to the next line)</span></td>
+                <td>The flex property allows you to declare <span class="bold">flex-grow, flex-shrink, and flex-basis all in one line.</span>
+                (ea. <span class="code">#big{ flex: 2 1 150px; } #normal{ flex: 1 1 150px; }</span> Here the #big item will grow twice as much in the new space available)</td>
             </tr>
             <tr>
                 <td><span class="code">align-content</span></td>
-                <td> ... </td>
+                <td><span class="code">align-items</span> is for aligning elements within a single row. 
+                    If a flex container has multiple rows of content, we can use <span class="code">align-content</span> to space the rows from top to bottom.
+                    <span class="code">flex-start</span>would be to the top, <span class="code">flex-end</span> is bottom, <span class="code">center</span> is in the middle, <span class="code">space-around</span> is even spacing between rows including space before and after, 
+                    <span class="code">space-between</span> is even spacing between rows with no space above or below and <span class="code">stretch</span> will stretch rows from top to bottom 
+                    of the container if they have no or a min. specified height, elements with a height specified will not stretch</td>
             </tr>
             <tr>
                 <td><span class="code">flex-direction</span></td>
-                <td> ... </td>
+                <td>This allows us to swap the main axis and the cross axis, which will change the direction in which the children will be aligned within the container.
+                    Default is <span class="code">row</span> elements will be positioned from left to right across the parent element starting from the top left corner. 
+                    <span class="code">row-reverse</span> elements will be positioned from right to left across the parent element starting from the top right corner.
+                    <span class="code">column</span> elements will be positioned from top to bottom of the parent element starting from the top left corner.
+                    <span class="code">column-reverse</span> elements will be positioned from the bottom to the top of the parent element starting from the bottom left corner.
+                </td>
+            </tr>
+            <tr>
+                <td><span class="code">flex-wrap</span></td>
+                <td>This allows us to specify if and how we want flex-items to move to the next line when necessary. Default is <span class="code">nowrap</span> which prevents items from wrapping, 
+                    <span class="code">wrap</span> will make the item that doesn't fit into a row move DOWN to the next line, <span class="code">wrap-reverse</span> will make the item that doesn't fit into a row move UP to the next line)</span></td>
             </tr>
             <tr>
                 <td><span class="code">flex-flow</span></td>
-                <td> ... </td>
+                <td>The flex-flow property allows you to declare <span class="bold">flex-direction and flex-wrap in one line.</span>
+                    (ea. <span class="code">#big{ flex-flow: column wrap; }</span> Here the #big container will align its flex items in column and allows them to wrap to the next line if needed)</td>
             </tr>
         </tbody>
     </table>
