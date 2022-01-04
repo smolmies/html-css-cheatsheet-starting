@@ -10,18 +10,23 @@
 <body>
     <header>    
         <h1>Reference sheet HTML&CSS</h1>
-        <nav>
-            <a href="design-system.html"> Website Design System</a>
+        <nav id="cheat-nav">
+            <a id="page-link" href="design-system.html"> Website Design System</a>
+            <ul>
+                <li><a href="#html-block">HTML</a></li>
+                <li><a href="#css-block">CSS</a></li>
+                <li><a href="#js-block">JavaScript</a></li>                
+            </ul>
         </nav>
     </header>
 
-    <h2>Semantic HTML</h2>
+    <h2 id="html-block">Semantic HTML</h2>
     <table>
-        <thead class="bold">
+        <thead>
             <tr>
-                <td>Tag</td>
-                <td>Description</td>
-                <td>Attributes</td>
+                <td class="bold">Tag</td>
+                <td class="bold">Description</td>
+                <td class="bold">Attributes</td>
             </tr>
         </thead>
         <tbody>
@@ -75,13 +80,13 @@
 
     </table>
 
-    <h2>CSS Properties</h2>
+    <h2 id="css-block">CSS Properties</h2>
     <table>
-        <thead class="bold">
+        <thead>
             <tr>
-                <td>Property</td>
-                <td>Description</td>
-                <td>Value available for the property</td>
+                <td class="bold">Property</td>
+                <td class="bold">Description</td>
+                <td class="bold">Value available for the property</td>
             </tr>
         </thead>
         <tbody>
@@ -146,10 +151,10 @@
     
     <h2>Flexbox</h2>
     <table>
-        <thead class="bold">
+        <thead>
             <tr>
-                <td>Property</td>
-                <td>Description and most common values</td>
+                <td class="bold">Property</td>
+                <td class="bold">Description and most common values</td>
             </tr>
         </thead>
         <tbody>
@@ -227,10 +232,10 @@
 
     <h2>Media Queries</h2>
     <table>
-        <thead class="bold">
+        <thead>
             <tr>
-                <td>Media features</td>
-                <td>Description</td>
+                <td class="bold">Media features</td>
+                <td class="bold">Description</td>
             </tr>
         </thead>
         <tbody>
@@ -240,27 +245,27 @@
                     or <span class="code"> , ( ... ) </span><span class="italic"> { just one feature must be met }</span></span> </td>
             </tr>
             <tr>
-                <td class="code">(min-width: ...px)</td>
+                <td><span class="code">(min-width: ...px)</span></td>
                 <td>Set a minimum width of the screen or the view of the browser window</td>
             </tr>
             <tr>
-                <td class="code">(max-width: ...px)</td>
+                <td><span class="code">(max-width: ...px)</span></td>
                 <td>Set a maximum width of the screen or the view of the browser window</td>
             </tr>
             <tr>
-                <td class="code">(min-resolution: ...dpi/dpc)</td>
+                <td><span class="code">(min-resolution: ...dpi/dpc)</span></td>
                 <td>Set a minimum resolution (dots per inch/cm) of the screen or the view of the browser window</td>
             </tr>
             <tr>
-                <td class="code">(max-resolution: ...dpi/dpc)</td>
+                <td><span class="code">(max-resolution: ...dpi/dpc)</span></td>
                 <td>Set a maximum resolution (dots per inch/cm) of the screen or the view of the browser window</td>
             </tr>
             <tr>
-                <td class="code">(orientation: landscape)</td>
+                <td><span class="code">(orientation: landscape)</span></td>
                 <td>Detects if the page has more width than height. If a page is wider, it’s considered landscape</td>
             </tr>
             <tr>
-                <td class="code">(orientation: portrait)</td>
+                <td><span class="code">(orientation: portrait)</span></td>
                 <td>Detects if the page has more height than width. If a page is taller, it’s considered portrait</td>
             </tr>
             <tr>
@@ -268,6 +273,73 @@
             </tr>
         </tbody>
     </table>
+
+    <h2 id="js-block">DOM Javascript</h2>
+    <table>
+        <thead>
+            <tr>
+                <td class="bold">Selectors</td>
+                <td class="bold">Description</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <span class="code">document</span> 
+                </td>
+                <td>This keyword grants access to the root of the DOM in JavaScript</td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="code">.querySelector()</span> 
+                </td>
+                <td>This method allows you to select a specific element with CSS selectors</td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="code">.getElementById()</span> 
+                </td>
+                <td>This method allows you to select a specific element directly by its ID</td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="code">.innerHTML</span> 
+                </td>
+                <td>This property allows you to modify an element by changing its contents</td>
+            </tr> 
+            <tr>
+                <td>
+                    <span class="code">.style</span> 
+                </td>
+                <td>This property allows you to modify an element by changing its style</td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="code">.createElement()</span> 
+                </td>
+                <td>This method allows you to create a new element of the chosen type</td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="code">.appendChild()</span> 
+                </td>
+                <td>This method allows you to place a new element inside the chosen parent element</td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="code">.removeChild()</span> 
+                </td>
+                <td>This method allows you to remove an element inside the chosen parent element</td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="code">.onclick</span> 
+                </td>
+                <td>This method allows you to execute a function when the targeted element has been clicked on</td>
+            </tr>    
+        </tbody>
+    </table>
+
    <footer>
     <img id="footer-img" src="./resources/images/to-be-continued-meme.png" alt="To be continued">   
     </footer> 

@@ -17,7 +17,7 @@ table {
 
 thead td{
     background-color: rgba(242, 117, 72, 1);
-    color: rgba(242, 231, 222, 1);
+    color: rgb(255, 255, 255);
     vertical-align: middle;
     border: 3px solid rgba(2, 12, 10, 1);
     letter-spacing: 2px;
@@ -30,5 +30,22 @@ td {
    padding: 5px 5px;
 }
 
+#cheat-nav {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+}
 
+#cheat-nav ul{
+    display: inline-flex;
+}
+
+#cheat-nav li {
+    margin: 0 30px;
+    list-style:none;
+}
+
+#cheat-nav li a:hover{
+    color: rgba(242, 117, 72, 1);
+}
 
