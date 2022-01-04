@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Personal Reference Sheet</title>
+    <link href="./resources/css/styles.css" rel="stylesheet">
     <link href="./resources/css/index.css" rel="stylesheet">
-    <link href="./resources/css/design-system.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&family=Nanum+Gothic+Coding&family=Raleway:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&family=Nanum+Gothic+Coding&family=Raleway:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
 <body>
     <header>    
         <h1>Reference sheet HTML&CSS</h1>
@@ -24,6 +25,18 @@
             </tr>
         </thead>
         <tbody>
+            <tr>
+                <td><span class="code">&lt;link&gt;</span></td>
+                <td>Element to connect the stylesheet file to the html file (selfclose)</td>
+                <td><span class="code">href=""</span> for source, <span class="code">rel="stylesheet"</span> te define relation. (Always define this in the head tag)</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;script&gt;</span></td>
+                <td>Element to connect the javascript file to the html file (open/close)</td>
+                <td><span class="code">href=""</span> for source. Use <span class="code">defer</span> to make this script execute AFTER all the html is parsed.
+                    Use <span class="code">async</span> to allow the HTML parser to continue parsing as the script is being downloaded, but will execute immediately after it has been downloaded. 
+                    (Always define this in the head tag)</td>
+            </tr>
             <tr>
                 <td><span class="code">&lt;a&gt;</span></td>
                 <td>Element to make an anchor(link) to external source, other/part of page (open/close)</td>
