@@ -19,7 +19,6 @@
         <thead class="bold">
             <tr>
                 <td>Tag</td>
-                <td>Name</td>
                 <td>Description</td>
                 <td>Attributes</td>
             </tr>
@@ -27,41 +26,35 @@
         <tbody>
             <tr>
                 <td><span class="code">&lt;a&gt;</span></td>
-                <td class="bold italic">Anchor</td>
-                <td>Element to make link to external source, other/part of page (open/close)</td>
+                <td>Element to make an anchor(link) to external source, other/part of page (open/close)</td>
                 <td><span class="code">href=""</span> for source, <span class="code">target="_blank"</span> to open in new tab, 
                     elements between open and closing tags will be clickable link, in a &ltli&gt; the anchor must be inside the opening and closing tags</td>
             </tr>
             <tr>
                 <td><span class="code">&lt;img&gt;</span></td>
-                <td class="bold italic">Image</td>
-                <td>Element to insert a picture from files or external source (selfclose)</td>
+                <td>Element to insert an image from files or external source (selfclose)</td>
                 <td><span class="code">src=""</span> for source,
                     <span class="code">alt=""</span> for description of picture (mostly for search engine and screenreader)</td>
             </tr>
             <tr>
                 <td><span class="code">&lt;audio&gt;</span></td>
-                <td class="bold italic">Audio</td>
                 <td>Element to insert an audio from files or external source (open/close)</td>
                 <td><span class="code">src=""</span> for source, <span class="code">controls</span> for play/pause/volume, 
                     <span class="code">autoplay</span> to start audio on page load</td>
             </tr>
             <tr>
                 <td><span class="code">&lt;video&gt;</span></td>
-                <td class="bold italic">Video</td>
                 <td>Element to insert a video from files or external source (open/close)</td>
                 <td><span class="code">src=""</span> for source, include "Video not supported" between open and closing tags in case video can't be loaded, 
                     <span class="code">controls</span> for play/pause/volume, <span class="code">autoplay</span> to start video on page load</td>
             </tr>
             <tr>
                 <td><span class="code">&lt;embed&gt;</span></td>
-                <td class="bold italic">Embed</td>
                 <td>Element to insert any type of media (photo, video, GIF etc.) (selfclose)</td>
                 <td class="underline bold">This tag is advised not to be used anymore! Taught for legacy purpose only</td>
             </tr>
             <tr>
                 <td><span class="code">&lt;figure&gt;</span></td>
-                <td class="bold italic">Figure</td>
                 <td>Element to enclose media (photo, video etc.) (open/close)</td>
                 <td><span class="code">&lt;figcaption&gt;</span> (open/close) to add caption/description to be grouped with the media inside the figure tag</td>
             </tr>
@@ -143,7 +136,7 @@
         <thead class="bold">
             <tr>
                 <td>Property</td>
-                <td>Description</td>
+                <td>Description and most common values</td>
             </tr>
         </thead>
         <tbody>
@@ -156,11 +149,6 @@
                 <td><span class="code">display: inline-flex</span></td>
                 <td>Element that gets the inline-flex value will become a flex container and will become inline level - other elements are allowed to appear on the same line. 
                     It will change the behavior of its child elements, these will become inline too.</td>
-            </tr>
-            <tr>
-                <td colspan="2">Most common values for the following properties are: <span class="code">flex-start</span>, 
-                    <span class="code">flex-end</span>, <span class="code">center</span>, <span class="code">space-around</span> 
-                    and <span class="code">space-between</span>. Or <span class="code">baseline</span> and <span class="code">stretch</span>.</td>
             </tr>
             <tr>
                 <td><span class="code">justify-content</span></td>
@@ -236,7 +224,7 @@
             <tr>
                 <td colspan="2">
                     <span class="code bold">@media only screen and (...)</span> extend query by adding <span class="code">and ( ... )</span><span class="italic"> { both features must be met }</span> 
-                    or<span class="code"> , ( ... ) </span><span class="italic"> { just one feature must be met }</span></span> </td>
+                    or <span class="code"> , ( ... ) </span><span class="italic"> { just one feature must be met }</span></span> </td>
             </tr>
             <tr>
                 <td class="code">(min-width: ...px)</td>

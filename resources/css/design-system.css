@@ -6,23 +6,6 @@
  YELLOW color: rgba(247, 162, 113, 1);
  ORANGE color: rgba(242, 117, 72, 1); */
 
-h3 {
-    background-color: transparent;
-    font-size: 26px;
-    margin: 20px;
-}
-h4 {
-    font-size: 20px;
-    text-decoration: underline;
-}
-
-.bold {
-    font-weight: 700;
-}
-.italic {
-    font-style: italic;
-}
-
 .color-container, .font-container, .text-style-container {
     box-sizing: border-box;
     width: 90%;
@@ -30,6 +13,13 @@ h4 {
     margin: 50px auto;
     border: 5px double rgba(2, 12, 10, 1);
     border-radius: 5px;
+}
+
+.color-blocks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .color-container p {
@@ -40,10 +30,12 @@ h4 {
 .color-theme {
     display: inline-block;
     height: 100px;
+    min-width: 150px;
     width: 25%;
     padding: 10px;
     margin: 20px 10px;
     border: 1px solid rgba(2, 12, 10, 1);
+    border-radius: 3px;
 }
 .color-theme-one {
     background-color: rgba(216, 143, 204, 1);
@@ -67,9 +59,16 @@ h4 {
     background-color: rgba(242, 117, 72, 1);
 }
 
-.font-container div {
-    display: inline-block;
+.font-blocks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
     margin: 10px;
+}
+
+.font{
+    margin: 1rem;
 }
 .font-one h4, .font-one p {
     font-family: 'Mali', serif;
@@ -85,5 +84,12 @@ h4 {
 }
 
 .text-container li {
-    list-style-type:square;
+    list-style-type: circle;
+}
+
+@media only screen and (max-width: 640px) {
+
+    .color-theme{
+        width: 70%;
+    }
 }
