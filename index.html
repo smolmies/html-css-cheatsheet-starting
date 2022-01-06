@@ -32,7 +32,7 @@
         <tbody>
             <tr>
                 <td><span class="code">&lt;link&gt;</span></td>
-                <td>Element to connect the stylesheet file to the html file (selfclose)</td>
+                <td>Element to connect the CSS file to the html file (selfclose)</td>
                 <td><span class="code">href=""</span> for source, <span class="code">rel="stylesheet"</span> te define relation. (Always define this in the head tag)</td>
             </tr>
             <tr>
@@ -40,7 +40,7 @@
                 <td>Element to connect the javascript file to the html file (open/close)</td>
                 <td><span class="code">href=""</span> for source. Use <span class="code">defer</span> to make this script execute AFTER all the html is parsed.
                     Use <span class="code">async</span> to allow the HTML parser to continue parsing as the script is being downloaded, but will execute immediately after it has been downloaded. 
-                    (Always define this in the head tag)</td>
+                    (Define in the head tag or at the bottom of the body)</td>
             </tr>
             <tr>
                 <td><span class="code">&lt;a&gt;</span></td>
@@ -115,27 +115,32 @@
             <tr>
                 <td><span class="code">&lt;textarea&gt;</span> </td>
                 <td>Element to add a bigger text field than input (open/close)</td>
-                <td><span class="code">rows=''</span> and <span class="code">cols=''</span> can be added to determine the size of the text field. Writing text between the open and closing tags 
-                    will make that the prefilled text in the field. Value upon submit will be what is written inside the area by user</td>
+                <td><span class="code">rows=''</span> and <span class="code">cols=''</span> can be added to determine the size of the text field. Writing text between the tags 
+                    will make that the default text in the field. Value upon submit will be what is written inside the area by user</td>
             </tr>
             <tr>
                 <td colspan="3">
                    <span class="bold">Types of input fields:</span>
-                   
                    <ul>
                        <li><span class="code">text</span> (single line, plain text field)</li>
-                       <li><span class="code">password</span> ( single line, text appears as *****)</li>
-                       <li><span class="code">number</span> (add steps="" to add arrows in the field to in/decrease)</li>
-                       <li><span class="code">range</span> (create slider, use min=""/max="" to define range, step="" for in/decrease)</li>
-                       <li><span class="code">checkbox</span> (multiple choices, all selectable. All boxes have same name='' to group them. Set value='', id='' and label the same to make the choice per box clear)</li>
-                       <li><span class="code">radio</span> (multiple choice, ONE selectable. All boxes have same name='' to group them. Set value='', id='' and label the same to make the choice per box clear)</li>
-                       <li><span class="code">submit</span> (value="" will be what is displayed on the button, clicking this element submits the form)</li>
+                       <li><span class="code">password</span> (single line, text appears as ***)</li>
+                       <li><span class="code">email</span> (single line, requires an @ to be inside the value)</li>
+                       <li><span class="code">number</span> (create textfield, use min=''/max='' to define range, add steps='' to add arrows in the field to in/decrease)</li>
+                       <li><span class="code">range</span> (create slider, use min=''/max='' to define range, step='' for in/decrease smoothness in the slider)</li>
+                       <li><span class="code">checkbox</span> (multiple choices, all selectable. All boxes have same name='' to group them. Set value='', id='' and label the same per option)</li>
+                       <li><span class="code">radio</span> (multiple choice, ONE selectable. All boxes have same name='' to group them. Set value='', id='' and label the same per option)</li>
+                       <li><span class="code">submit</span> (value='' will be what is displayed on the button, clicking this element submits the form)</li>
                    </ul>
+                   <span class="bold">Types of built-in validation:</span>
+                   <ul>
+                    <li><span class="code">required</span> (makes submitting the form impossible without entering a value)</li>
+                    <li><span class="code">min=''/max=''</span> (defines the allowed range in the number and range input field)</li>
+                    <li><span class="code">minlength=''/maxlength=''</span> (defines the allowed length of text in the text input or textarea)</li>
+                    <li><span class="code">pattern="</span> (makes the value inside the field follow a required pattern by using RegEx)</li>
+                </ul>
                 </td>
             </tr>
-
         </tbody>
-
     </table>
 
     <h2 id="css-block">CSS Properties</h2>
