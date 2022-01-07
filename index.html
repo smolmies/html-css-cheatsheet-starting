@@ -9,9 +9,9 @@
 </head>
 <body>
     <header>    
-        <h1>Reference sheet HTML&CSS</h1>
-        <nav id="cheat-nav">
-            <a id="page-link" href="design-system.html"> Website Design System</a>
+        <h1>Frontend Reference Sheet</h1>
+        <nav class="section-nav">
+            <a class="page-link" href="design-system.html">Website Design System</a>
             <ul>
                 <li><a href="#html-block">HTML</a></li>
                 <li><a href="#css-block">CSS</a></li>
@@ -76,9 +76,19 @@
                 <td>Element to enclose media (photo, video etc.) (open/close)</td>
                 <td><span class="code">&lt;figcaption&gt;</span> (open/close) to add caption/description to be grouped with the media inside the figure tag</td>
             </tr>
+        </tbody>
+    </table>
+
+    <h2>Forms</h2>
+    <table>
+        <thead>
             <tr>
-                <td colspan="3"></td>
+                <td class="bold">Tag</td>
+                <td class="bold">Description</td>
+                <td class="bold">Attributes</td>
             </tr>
+        </thead>
+        <tbody>
             <tr>
                 <td><span class="code">&lt;form&gt;</span></td>
                 <td>Element for collecting information (open/close)</td>
@@ -212,6 +222,75 @@
         </tbody>
     </table>
     
+    <h2>Animations</h2>
+    <table>
+        <thead>
+            <tr>
+                <td class="bold">Property</td>
+                <td class="bold">Description</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="code">transition-property</span></td>
+                <td>Selects the property of the target element you want to add an animation to. <span class="code">all</span> can be used to set the same animation to all the properties in the CSS selector</td>
+            </tr>
+            <tr>
+                <td><span class="code">transition-duration</span></td>
+                <td>Sets the amount of time you want the transition to last in total in s or in ms, default is 0s</td>
+            </tr>
+            <tr>
+                <td><span class="code">transition-timing function</span></td>
+                <td>Sets the progression of the animation, default is <span class="code">ease</span> : start slow, accelerates quickly, stops slow,
+                    <span class="code">ease-out</span> : start abruptly, slows down, ends slow, <span class="code">ease-in</span> : slow start, accelerates quickly and stops abruptly,
+                    <span class="code">ease-in-out</span> : slow start, accelerates quickly, end slow, <span class="code">linear</span> : constant speed throughout</td>
+            </tr>
+            <tr>
+                <td><span class="code">transition-delay</span></td>
+                <td>Sets the amount of time you want the transition to wait before it starts in s or in ms, default is 0s</td>
+            </tr>
+            <tr>
+                <td><span class="code">transition</span></td>
+                <td>Shorthand to set all the above properties in one line, always in that order! If a property is left out the default value will be set.
+                    To combine multiple transitions add a " , " between the sets of properties and define the next set</td>
+            </tr>
+            <tr>
+                <td><span class="code">transform</span></td>
+                <td>Defines how to make an element change from one state to another</td>
+            </tr>
+            <tr>
+                <td><span class="code">transform: scale()</span></td>
+                <td>Makes the element change size on its X- and Y-axis. For example <span class="code">scaleX()</span> sets the change on the X axis or you can use the shorthand
+                    <span class="code">scale(x ,y)</span> to set both axis a different value or eneter one value to be applied to both</td>
+            </tr>
+            <tr>
+                <td><span class="code">transform: rotate()</span></td>
+                <td>Makes the element rotate on the spot. For example <span class="code">rotate(90deg)</span> makes the element turn a quarter, but if you want to make it spin a few times
+                    you can add any value over 360deg, <span class="code">rotate(1080deg)</span> makes it turn around 3 full rotations</td>
+            </tr>
+            <tr>
+                <td><span class="code">transform: translate()</span></td>
+                <td>Makes the element move to a defined spot relative from the start position. <span class="code">translate(20px, 20px)</span> makes the element move 20px to the right and 20px down.
+                    If you add negative values, <span class="code">translate(-20px, -20px)</span> the element will move to the left and up</td>
+            </tr>
+            <tr>
+                <td><span class="code">transform: skew()</span></td>
+                <td>Makes the element skew (or tilt) one direction based on the values given to the X- and Y-axis <span class="code">skewX(-20deg)</span> makes the element tilt to the right while 20deg will make it tilt to the left.
+                    Using the shorthand <span class="code">skew(20deg, 10deg)</span> makes the element tilt on both axis</td>
+            </tr>
+            <tr>
+                <td><span class="code">transform-origin</span></td>
+                <td>Default an item will transform from its center, if for example you would want it to be from the left top corner you can define it by using <span class="code">transform-origin: left top;</span> or
+                     <span class="code">transform-origin: 0% 0%;</span> to make the element transform from that point</td>
+            </tr>
+            <tr>
+                <td><span class="code">transform</span></td>
+                <td>The transform shorthand allows you to string the various transform methods into one property. <span class="code">transform: rotate(90deg) scale(2) translateY(-50%) translateX(50%);</span>
+                     would be a way to define all these transformations in one line</td>
+            </tr>
+        </tbody>
+    </table>
+
     <h2>Flexbox</h2>
     <table>
         <thead>
@@ -239,7 +318,7 @@
             </tr>
             <tr>
                 <td><span class="code">align-items</span></td>
-                <td>This will cause all of the flex items to shift to the defined value within the flex container <span class="bold">(ON THE Y-AXIS)</span>
+                <td>This will cause all of the flex items within a single row to shift to the defined value within the flex container <span class="bold">(ON THE Y-AXIS)</span>
                     <span class="code">flex-start</span> would be to the top, <span class="code">flex-end</span> is bottom, <span class="code">center</span> is in the middle, <span class="code">baseline</span> aligns the bottoms of all items with eachother 
                     and <span class="code">stretch</span> will stretch items from top to bottom of the container if they have no or a min. specified height, elements with a height specified will not stretch
                 </td>
@@ -265,16 +344,14 @@
             </tr>
             <tr>
                 <td><span class="code">align-content</span></td>
-                <td><span class="code">align-items</span> is for aligning elements within a single row. 
-                    If a flex container has multiple rows of content, we can use <span class="code">align-content</span> to space the rows from top to bottom.
+                <td>If a flex container has multiple rows of content, we can use <span class="code">align-content</span> to space the rows from top to bottom.
                     <span class="code">flex-start</span>would be to the top, <span class="code">flex-end</span> is bottom, <span class="code">center</span> is in the middle, <span class="code">space-around</span> is even spacing between rows including space before and after, 
                     <span class="code">space-between</span> is even spacing between rows with no space above or below and <span class="code">stretch</span> will stretch rows from top to bottom 
                     of the container if they have no or a min. specified height, elements with a height specified will not stretch</td>
             </tr>
             <tr>
                 <td><span class="code">flex-direction</span></td>
-                <td>This allows us to swap the main axis and the cross axis, which will change the direction in which the children will be aligned within the container.
-                    Default is <span class="code">row</span> elements will be positioned from left to right across the parent element starting from the top left corner. 
+                <td>Default is <span class="code">row</span> elements will be positioned from left to right across the parent element starting from the top left corner. 
                     <span class="code">row-reverse</span> elements will be positioned from right to left across the parent element starting from the top right corner.
                     <span class="code">column</span> elements will be positioned from top to bottom of the parent element starting from the top left corner.
                     <span class="code">column-reverse</span> elements will be positioned from the bottom to the top of the parent element starting from the bottom left corner.

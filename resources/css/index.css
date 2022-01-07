@@ -35,22 +35,4 @@ td li{
     font-size: 0.9rem;
 }
 
-#cheat-nav {
-    width: 100%;
-    display: flex;
-    justify-content:space-between;
-}
-
-#cheat-nav ul{
-    display: inline-flex;
-}
-
-#cheat-nav li {
-    margin: 0 30px;
-    list-style:none;
-}
-
-#cheat-nav li a:hover{
-    color: rgba(242, 117, 72, 1);
-}
 

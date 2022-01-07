@@ -6,7 +6,7 @@
  YELLOW color: rgba(247, 162, 113, 1);
  ORANGE color: rgba(242, 117, 72, 1); */
 
-.color-container, .font-container, .text-style-container {
+#color-container, #font-container, #text-style-container {
     box-sizing: border-box;
     width: 90%;
     padding: 40px;
@@ -22,7 +22,7 @@
     flex-wrap: wrap;
 }
 
-.color-container p {
+#color-container p {
     font-weight: bold;
     background-color: transparent;
     text-align: center;
