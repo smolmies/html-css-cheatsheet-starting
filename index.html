@@ -289,6 +289,35 @@
                 <td>The transform shorthand allows you to string the various transform methods into one property. <span class="code">transform: rotate(90deg) scale(2) translateY(-50%) translateX(50%);</span>
                      would be a way to define all these transformations in one line</td>
             </tr>
+            <tr>
+                <td><span class="code">@keyframe</span></td>
+                <td>This helps define the stages of a CSS animation by setting the css properties at different points in the animation. You use a name for the animation and use % to define at what point which properties are used.
+                    For example <span class="code">@keyframes bounceIn { <br />
+                    0% {
+                      transform: scale(0.1);
+                      opacity: 0;
+                    } <br />
+                    60% {
+                      transform: scale(1.2);
+                      opacity: 1;
+                    } <br />
+                    100% {
+                      transform: scale(1);
+                    }
+                  }</span>
+                </td>
+            </tr>
+            <tr>
+                <td><span class="code">animation</span></td>
+                <td>This is the basic shorthand that helps you assign the animation to the target element. You have to declare the name and the duration, which can be done seperately like this: <span class="code">animation-name: bounceIn; animation-duration: 2s;</span> 
+                    or by using the shorthand you can write it in one line like this <span class="code">animation: bounceIn 2s;</span>. You can keep adding more properties, but always follow the order below!
+                    </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    animation: <span class="code bold">[animation-name] [animation-duration] [animation-timing-function] [animation-delay] [animation-iteration-count] [animation-direction] [animation-fill-mode] [animation-play-state];</span>
+                </td>
+            </tr>
         </tbody>
     </table>
 

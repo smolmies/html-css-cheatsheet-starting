@@ -8,7 +8,7 @@
 
 table {
     border: 6px double rgba(2, 12, 10, 1);
-    border-radius: 3px;
+    border-radius: 5px;
     background-image: linear-gradient(to top, rgba(216, 143, 204, 1), rgba(216, 143, 204, 0.6));
     margin: 20px auto;  
     padding: 5px; 
