@@ -27,12 +27,20 @@ thead td{
 td {
    font-weight: 500;
    border: 1px solid rgba(2, 12, 10, 1);
-   background-color: rgba(242, 231, 222, 1);
+   background-color: rgb(255, 255, 255);
    padding: 5px 5px;
 }
 
 td li{
     font-size: 0.9rem;
+    background-color: transparent;
 }
 
+td ul{
+    background-color: transparent;
+}
+
+td .bold, td .italic{
+    background-color: transparent;
+}
 
