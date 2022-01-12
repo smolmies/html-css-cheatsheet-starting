@@ -16,7 +16,10 @@ The website design system highlights the design aspects i have incorporated thro
 + HTML
 + CSS
 
+#### View the Project:
 
-*This project is still in development and updated frequently to add more content to the reference sheet.*
+Since the project is static i have activated Github Pages on it. You can view the project [here!](https://smolmies.github.io/reference-sheet-and-design/) 
+
+*This project is still in development and updated frequently to add more content to the reference sheet or implement those items learned into its styling.*
 
 **Thanks for reading!**
